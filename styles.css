@@ -1,0 +1,646 @@
+/* Primary Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+/* Primary Settings */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #b62828;
+  --secondary-color: #000;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+/* Reusable and Utility Classes */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.rectangle {
+  width: 51rem;
+  height: 1rem;
+  background-color: var(--primary-color);
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.25);
+}
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#heading h1 {
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+  font-family: Quattrocento;
+  font-style: normal;
+}
+
+#main {
+  background-color: black;
+}
+
+/* Header section styles */
+
+#header {
+  align-items: center;
+  line-height: 3;
+  padding: 0 3rem;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0px 1px 10px rgb(116, 71, 71);
+}
+
+#header #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar > i {
+  font-size: 3rem;
+  display: none;
+}
+
+#right-nav a {
+  color: white;
+  font-family: ruda, sans-serif;
+  text-decoration: none;
+  font-size: 2.9rem;
+}
+
+#middle-nav .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+#middle-nav .nav-links .nav-li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.4rem;
+  font-family: ruda, sans-serif;
+  text-transform: uppercase;
+}
+
+#left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section - Page 1 */
+
+#page-1 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url(./assets/Hero-section-background-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#page-1 #hero-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 4rem;
+  bottom: 2rem;
+}
+
+#page-1 #hero-section h1 {
+  width: 88rem;
+  font-family: Quattrocento, sans-serif;
+  color: white;
+  font-size: 10rem;
+  margin: 3rem 0;
+}
+
+#hero-section .rectangle {
+  width: 58rem;
+  height: 1rem;
+  background-color: var(--primary-color);
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.25);
+}
+
+#hero-section p {
+  width: 59rem;
+  font-family: ruda, sans-serif;
+  font-weight: 400;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+
+/* Page 2 Styles */
+
+#page-2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us-content {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.para-section {
+  width: 50%;
+}
+
+#about-us-content .para-section .dash {
+  width: 53.5rem;
+  height: 0.4rem;
+  background-color: var(--primary-color);
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.25);
+}
+
+#about-us-content .para-section p {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  width: 100%;
+}
+
+.img-section {
+  width: 50%;
+  border-radius: 3rem;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 74.48%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.img-section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Page 3 / Menu Styles */
+
+#page-3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-content-section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-content-section .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.row .col {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-card-info h3 {
+  color: #f2c94c;
+  font-size: 2.8rem;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu-card-info p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+/* Page 4 / carousel styles */
+
+#page-4 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bootstrap-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.carousel-indicators button {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50%;
+}
+
+/* Page 5 / gallery styles */
+
+#page-5 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+
+.gallery {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 2rem;
+}
+
+.gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.gallery #img-1 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.gallery #img-3 {
+  grid-row: span 2;
+}
+
+.gallery #img-6 {
+  grid-row: span 1;
+}
+/* Page 6 / find us styles */
+
+#page-6 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+
+.find-us {
+  display: flex;
+  justify-content: space-around;
+  margin: 6rem 5rem;
+  gap: 3rem;
+}
+
+.find-us .right-div {
+  width: 50%;
+  margin: 0 10rem;
+}
+
+.find-us .right-div p {
+  width: 59rem;
+  font-family: ruda, sans-serif;
+  font-weight: 400;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+
+.find-us .right-div .location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.find-us .right-div .location img {
+  height: 3rem;
+}
+
+.find-us .right-div .location p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.find-us .right-div .phone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.find-us .right-div .phone img {
+  height: 3rem;
+}
+
+.find-us .right-div .phone p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.left-div {
+  width: 50%;
+}
+
+.left-div iframe {
+  width: 100%;
+}
+
+/* Footer styles */
+
+footer {
+  min-height: 30vh;
+  width: 100%;
+  padding: 0 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.left-footer .mail-col {
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.left-footer .phone {
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+@media screen and (max-width: 1190px) {
+  .container {
+    padding: 0 10rem;
+  }
+  html {
+    font-size: 50%;
+  }
+
+  #header {
+    line-height: 10rem;
+  }
+  
+  .row .col {
+    margin-top: 4rem;
+    display: block;
+  }
+
+  .row .col img{
+    margin: 4rem 0;
+  }
+  .menu-card-info p {
+    width: 80%;
+  }
+
+  .bootstrap-carousel {
+    margin: 5rem 3rem;
+  }
+
+  #page-2 {
+    margin-top: 10rem;
+  }
+
+  .gallery {
+    margin: 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 2rem;
+  }
+
+  .bootstrap-carousel {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  html {
+    font-size: 47.75%;
+  }
+
+  #middle-nav {
+    display: none;
+  }
+
+  #left-nav {
+    display: none;
+  }
+  #navbar > i {
+    display: block;
+  }
+
+  .row .col {
+    margin-top: 2rem;
+  }
+
+  #about-us-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
+
+  .para-section {
+    margin-top: 35rem;
+    width: 80%;
+    height: 50%;
+  }
+  .img-section {
+    width: 80%;
+    height: 50%;
+  }
+
+  .gallery {
+    margin: 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 2rem;
+  }
+
+  .find-us {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0;
+  }
+
+  .find-us .right-div {
+    width: 100%;
+  }
+
+  .find-us .left-div {
+    width: 100%;
+  }
+
+  .find-us .right-div p {
+    width: 100%;
+  }
+
+  .bootstrap-carousel {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  html {
+    font-size: 39.75%;
+  }
+
+  .para-section {
+    margin-top: 30rem;
+  }
+  .right-footer img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .mail-col img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .phone img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .para-section {
+    margin-top: 15rem;
+  }
+
+  .bootstrap-carousel {
+    margin: 0rem 0 !important;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col img{
+    width: 55rem;
+  }
+
+  .menu-card-info p{
+    font-size: 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 586px) {
+  html {
+    font-size: 37.75%;
+  }
+  #menu-content-section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 9rem;
+  }
+
+  .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-card-info p{
+    text-align: center;
+  }
+}
